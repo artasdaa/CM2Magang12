@@ -21,12 +21,23 @@ public class CM2Magang12 {
             sc.nextLine();
 
             switch (pilihan) {
-                case 1 -> tambahData();
-                case 2 -> tampilkanData();
-                case 3 -> cariProdi();
-                case 4 -> hitungStatus();
-                case 5 -> System.out.println("Program selesai.");
-                default -> System.out.println("Pilihan tidak valid!");
+                case 1:
+                    tambahData();
+                    break;
+                case 2:
+                    tampilkanData();
+                    break;
+                case 3:
+                    cariProdi();
+                    break;
+                case 4:
+                    hitungStatus();
+                    break;
+                case 5:
+                    System.out.println("Program selesai.");
+                    break;
+                default:
+                    System.out.println("Pilihan tidak valid!");
             }
         } while (pilihan != 5);
     }
